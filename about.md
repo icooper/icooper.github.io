@@ -1,32 +1,34 @@
 ---
 layout: page
 title: About
+longTitle: About Ian
+img:
+  src: /assets/img/ianc-about.jpg
+  class: headimg-right-10rem
+  alt: Ian in the mountains
 ---
 
-> This is a placeholder page from the [Hyde repository](https://github.com/poole/hyde/blob/master/_posts/2012-02-07-example-content.md).
-
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+<p class="lead" markdown="1">
+  Senior Testing and Analytics Engineer at [Celanese](https://www.celanese.com).
+  Formerly of [Microsoft](https://www.microsoft.com),
+    [Thermo Fisher Scientific](https://www.thermofisher.com),
+    [Royal Dutch Shell](https://www.shell.com),
+    and [Astrix Technology Group](https://astrixinc.com/).
+  Wears glasses.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Ian Cooper is a systems engineer living and working in the Cincinnati area. Originally from New England, Ian graduated from [LeTourneau University](https://www.letu.edu) in Texas with an interdisciplinary degree in aeronautical science, computer science, and math.
 
-There are currently two themes built on Poole:
+Ian has worked in the laboratory informatics domain for the past decade. Beginning as an application support analyst, he shifted into laboratory informatics consulting and software development. An expert with Thermo Fisher SampleManager LIMS, Ian has designed, built, and supported SampleManager systems worldwide for his clients and employers.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* [Contact Ian or connect with him on social media.](/contact.html)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## About this site
 
-## Setup
+Most of my posts here are related to technical projects that I've been working on or other subjects that interest me.
 
-Some fun facts about the setup of this project include:
+* Coded with [Visual Studio Code](https://code.visualstudio.com).
+* Built using [Jekyll](https://jekyllrb.com).
+* Hosted on [GitHub Pages](https://pages.github.com).
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+The code behind this site is [available on GitHub](https://github.com/icooper/icooper.github.io).
