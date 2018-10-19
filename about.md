@@ -17,9 +17,11 @@ img:
   Wears glasses.
 </p>
 
-Ian Cooper is a systems engineer living and working in the Cincinnati area. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
+Ian Cooper is a developer living and working in the Cincinnati area. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
 
 Ian has worked in the laboratory informatics domain for the past decade. Beginning as an application support analyst, he shifted into laboratory informatics consulting and software development. An expert with [SampleManager LIMS](https://www.thermofisher.com/order/catalog/product/INF-11000) software and the [Integration Manager](https://www.thermofisher.com/order/catalog/product/INF-25000) data transformation tool, Ian has designed, built, and supported LIMS systems worldwide for his clients and employers.
+
+Currently Ian works as a systems engineer for [Celanese](https://www.celanese.com), developing and supporting their global laboratory informatics processes and systems. Ian is available for consultation where there are no conflicts of interest with his current role at Celanese.
 
 * [Contact Ian or connect with him on social media.](/contact.html)
 
