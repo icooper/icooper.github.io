@@ -4,6 +4,7 @@ title: Example content
 date: 2012-02-07
 ---
 
+> This is a placeholder post from the [Hyde repository](https://github.com/poole/hyde/blob/master/_posts/2012-02-07-example-content.md).
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
