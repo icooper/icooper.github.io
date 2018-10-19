@@ -17,7 +17,7 @@ img:
   Wears glasses.
 </p>
 
-Ian Cooper is a systems engineer living and working in the Cincinnati area. Originally from New England, Ian graduated from [LeTourneau University](https://www.letu.edu) in Texas with an interdisciplinary degree in aeronautical science, computer science, and math.
+Ian Cooper is a systems engineer living and working in the Cincinnati area. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
 
 Ian has worked in the laboratory informatics domain for the past decade. Beginning as an application support analyst, he shifted into laboratory informatics consulting and software development. An expert with Thermo Fisher SampleManager LIMS, Ian has designed, built, and supported SampleManager systems worldwide for his clients and employers.
 
