@@ -1,7 +1,7 @@
 # License
 
-This site disign is based on [Hyde](http://hyde.getpoole.com/) by Mark Otto, which is licensed under the MIT License along with my modifications.
-All blog posts and code snippets are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This site design is based on [Hyde](http://hyde.getpoole.com/) by Mark Otto, which is licensed under the MIT License along with my modifications.
+All blog posts and code snippets are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) except where noted otherwise.
 
 # MIT License
 
