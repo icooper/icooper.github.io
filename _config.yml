@@ -1,6 +1,5 @@
 title:            'Ian Cooper'
 description:      'stuff'
 url:              http://ianc.blog
-baseurl:          /
 repository:       icooper/icooper.github.io
 paginate:         5
