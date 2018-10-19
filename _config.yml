@@ -1,7 +1,6 @@
-theme: jekyll-theme-minimal
-title: Ian Cooper
-description: false
-logo: /assets/img/logo.png
-repository: icooper/icooper.github.io
-show_downloads: false
-google_analytics: false
+title:            'Ian Cooper'
+description:      'stuff'
+url:              http://ianc.blog
+baseurl:          /
+repository:       icooper/icooper.github.io
+paginate:         5
