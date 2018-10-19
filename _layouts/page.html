@@ -7,12 +7,16 @@ layout: default
     {% if page.img %}
         <img src="{{ page.img.src }}"
              class="{{ page.img.class }}"
-             alt="{{ post.img.alt }}"
-             title="{{ post.img.alt }}" />
+             alt="{{ page.img.alt }}"
+             title="{{ page.img.alt }}" />
     {% endif %}
 
     <h1 class="page-title">
-        {{ page.longTitle ? page.longTitle : page.title }}
+        {% if page.longTitle %}
+            {{ page.longTitle }}
+        {% else %}
+            {{ page.title }}
+        {% endif %}
     </h1>
 
     {{ content }}
