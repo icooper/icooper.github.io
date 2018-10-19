@@ -65,3 +65,25 @@ li {
     height: 200px;
     margin: 0 auto;
 }
+
+.headimg-right-10rem {
+    width: 10rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+@media (min-width: 48em) {
+    .headimg-right-10rem {
+        width: 10rem;
+        float: right;
+        margin-top: 0.5rem;
+        margin-right: 0;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
