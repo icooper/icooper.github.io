@@ -1,4 +1,4 @@
-# Ian's Website
+# Ian's Blog
 
 This repository is the back-end behind [my web site](https://ianc.blog/). I use [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jeckyllrb.com/) with a design based off of [Hyde](https://github.com/poole/hyde).
 
