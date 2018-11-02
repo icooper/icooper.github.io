@@ -4,11 +4,6 @@ title: Column Formatting for Text Reports
 date: 2018-11-01
 ---
 
-<style type="text/css">
-    div.post > table:first-of-type, code.language-size-small { font-size: 0.7rem; }
-    div.post > table:first-of-type td { white-space: nowrap; }
-</style>
-
 Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table.
 Our raw data comes in JSON format; we'll use this as the input to our program:
 
@@ -30,7 +25,7 @@ Our raw data comes in JSON format; we'll use this as the input to our program:
             "Moisture Content": "4.85 wt. %",
             "Volatile Matter": "79.29 wt. %",
             "Fixed Carbon by Difference": "15.62 wt. %",
-            "Gross Caloric Value at Constant Volume": "19985 wt. %",
+            "Gross Caloric Value at Constant Volume": "19985 J/g",
             "Ash": "0.25 wt. %"
         },
         {
@@ -39,7 +34,7 @@ Our raw data comes in JSON format; we'll use this as the input to our program:
             "Moisture Content": "4.52 wt. %",
             "Volatile Matter": "80.91 wt. %",
             "Fixed Carbon by Difference": "16.01 wt. %",
-            "Gross Caloric Value at Constant Volume": "20004 wt. %",
+            "Gross Caloric Value at Constant Volume": "20004 J/g",
             "Ash": "0.23 wt. %"
         },
         {
@@ -48,7 +43,7 @@ Our raw data comes in JSON format; we'll use this as the input to our program:
             "Moisture Content": "4.68 wt. %",
             "Volatile Matter": "80.03 wt. %",
             "Fixed Carbon by Difference": "15.89 wt. %",
-            "Gross Caloric Value at Constant Volume": "19996 wt. %",
+            "Gross Caloric Value at Constant Volume": "19996 J/g",
             "Ash": "0.24 wt. %"
         }
     ]
@@ -193,16 +188,16 @@ for i in range(1, len(grid)):
 
 Here's the output of the program:
 
-```size-small
-                                                       Gross                 
-                                                       Caloric               
-                                           Fixed       Value at              
-Sample              Moisture   Volatile    Carbon by   Constant              
-Name    Date        Content    Matter      Difference  Volume      Ash       
-------- ----------- ---------- ----------- ----------- ----------- ----------
-X24-03  01-Nov-2018 4.85 wt. % 79.29 wt. % 15.62 wt. % 19985 wt. % 0.25 wt. %
-X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 wt. % 0.23 wt. %
-X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 wt. % 0.24 wt. %
+```
+                                                       Gross               
+                                                       Caloric             
+                                           Fixed       Value at            
+Sample              Moisture   Volatile    Carbon by   Constant            
+Name    Date        Content    Matter      Difference  Volume    Ash       
+------- ----------- ---------- ----------- ----------- --------- ----------
+X24-03  01-Nov-2018 4.85 wt. % 79.29 wt. % 15.62 wt. % 19985 J/g 0.25 wt. %
+X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 J/g 0.23 wt. %
+X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 J/g 0.24 wt. %
 ```
 
 The code for this post [can be found here](https://repl.it/@icooper1/formatting-columns).

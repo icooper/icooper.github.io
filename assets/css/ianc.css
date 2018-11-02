@@ -6,6 +6,12 @@ code, pre {
     font-family: "IBM Plex Mono", Menlo, Monaco, "Courier New", monospace;
 }
 
+pre {
+    font-size: 0.7rem;
+    overflow-x: auto;
+    white-space: pre;
+}
+
 .gist .gist-file {
     font-family: "IBM Plex Mono", Menlo, Monaco, "Courier New", monospace !important;
 }
