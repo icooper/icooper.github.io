@@ -147,7 +147,7 @@ function gridToLines(grid, units, columnWidths) {
 
 ## This Wide
 
-Now that we have our existing code a little better organized, let's move into the nuts and bolts of our algorithm. We want to incrementally make the tallest (defined by header height) column wider until it is shorter and we still fit on the page. Let's start by writing a function which will, given a string and a target height, will tell us the smallest wrapping width to acheive the target height.
+Now that we have our existing code a little better organized, let's move into the new stuff. We want to incrementally make the tallest (defined by header height) column wider until it is shorter and we still fit on the page. Let's start by writing a function which, given a string and a target height, will tell us the smallest wrapping width to acheive the target height.
 
 ```javascript
 // find the minimum width to wrap text to a target height
@@ -171,7 +171,7 @@ function calcWidth(str, targetHeight = 0) {
 
 Note that in `targetHeightWidth()` we made `targetHeight` an optional parameter with a default value of zero. We'll reuse this function later to calculate the minimum possible width of a column.
 
-Now we get to the real meat---how do we expand things to fill the page width? The basic algorithm is this:
+Now we get to the meat---how do we expand things to fill the page width? The basic algorithm is this:
 
 1. Find the "tallest" column header.
 2. Expand it so that it's one row shorter.
