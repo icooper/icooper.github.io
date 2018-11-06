@@ -65,15 +65,33 @@
 
     // wrap text to a specific length
     function wrapText(str, len) {
+
+        // split the string into words and use Array.reduce() to condense it into
+        // lines that are all less than or equal to the target length
         return str.split(/\s+/).reduce((accumulator, current) => {
+
+            // is this the first word?
             if (accumulator.length == 0) {
+
+                // start a new line with the first word
                 return [current];
             } else {
+
+                // get the last line
                 const lastLine = accumulator.pop();
+
+                // add the next word to the last line
                 const testLine = lastLine + ' ' + current;
+
+                // is this line less than or equal to the target length?
                 if (testLine.length <= len) {
+
+                    // add the line to the list
                     return accumulator.concat(testLine);
                 } else {
+
+                    // otherwise add the unmodified line to the list and start a
+                    // new line with the next word
                     return accumulator.concat(lastLine, current);
                 }
             }
