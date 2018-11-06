@@ -40,7 +40,7 @@ input.data.forEach(row => {
 });
 
 // minimum column width
-const minimumColumnWidth = 7
+const minimumColumnWidth = 7;
 
 // calculate the column widths
 let columnWidths = new Array(grid[0].length)
