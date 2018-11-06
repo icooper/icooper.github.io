@@ -133,7 +133,7 @@ grid.forEach((row, i) => {
 });
 
 // print out the lines
-console.log(lines.join("\n"));
+console.log(lines.join('\n'));
 ```
 
 ## Output
@@ -141,10 +141,19 @@ console.log(lines.join("\n"));
 Here's what the program outputs to the console:
 
 ```
+                                                       Gross               
+                                                       Caloric             
+                                           Fixed       Value at            
+Sample              Moisture   Volatile    Carbon by   Constant            
+Name    Date        Content    Matter      Difference  Volume    Ash       
+------- ----------- ---------- ----------- ----------- --------- ----------
+X24-03  01-Nov-2018 4.85 wt. % 79.29 wt. % 15.62 wt. % 19985 J/g 0.25 wt. %
+X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 J/g 0.23 wt. %
+X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 J/g 0.24 wt. %
 ```
 
-The complete code is above, but I also put it all together [in this gist](https://gist.github.com/icooper/b5eec2124f36abb4046333c7138adca2) to make it easier to read.
+[You can download the complete code here.](/assets/js/formatting-columns.js)
 
 ## Next Steps
 
-In the next installment, we'll update the program to make the output more readable by wrapping column headers a little better and parsing out the units.
+[In the next installment]({% link _posts/2018-11-05-parsing-units.md %}), we'll update the program to make the output more readable by wrapping column headers a little better and parsing out the units.
