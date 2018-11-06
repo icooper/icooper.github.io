@@ -5,8 +5,7 @@ date: 2018-11-01
 scripts: ['/assets/js/formatting-columns.js']
 ---
 
-Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table.
-Our raw data comes in JSON format; we'll use this as the input to our program:
+Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table. Our raw data comes in JSON format; we'll use this as the input to our program:
 
 ```json
 {
@@ -143,6 +142,8 @@ Here's what the program outputs to the console:
 
 ```
 ```
+
+The complete code is above, but I also put it all together [in this gist](https://gist.github.com/icooper/b5eec2124f36abb4046333c7138adca2) to make it easier to read.
 
 ## Next Steps
 
