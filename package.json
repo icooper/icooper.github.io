@@ -1,0 +1,12 @@
+{
+  "name": "icooper.github.io",
+  "version": "0.0.1",
+  "description": "Sources for Ian's blog.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icooper/icooper.github.io.git"
+  },
+  "author": "Ian Cooper",
+  "license": "ISC",
+  "homepage": "https://ianc.blog"
+}
