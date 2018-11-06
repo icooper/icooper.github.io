@@ -125,4 +125,4 @@ X24-01  30-Oct-2018 4.68     80.03    15.89      19996    0.24
 
 ## Next Steps
 
-In the next iteration, we'll improve the layout by expanding to fill the page width.
+[In the next iteration]({% link _posts/2018-11-06-fill-width.md %}), we'll improve the layout by expanding to fill the page width.
