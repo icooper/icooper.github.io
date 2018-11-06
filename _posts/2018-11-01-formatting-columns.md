@@ -2,6 +2,7 @@
 layout: post
 title: Column Formatting for Text Reports
 date: 2018-11-01
+scripts: ['/assets/js/formatting-columns.js']
 ---
 
 Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table.
@@ -9,15 +10,6 @@ Our raw data comes in JSON format; we'll use this as the input to our program:
 
 ```json
 {
-    "columns": [
-        "Sample Name",
-        "Date",
-        "Moisture Content",
-        "Volatile Matter",
-        "Fixed Carbon by Difference",
-        "Gross Caloric Value at Constant Volume",
-        "Ash"
-    ],
     "data": [
         {
             "Sample Name": "X24-03",
@@ -50,158 +42,108 @@ Our raw data comes in JSON format; we'll use this as the input to our program:
 }
 ```
 
-## Read JSON
-
-Reading our JSON file in Python is pretty easy.
-
-```python
-# load the library for JSON parsing
-import json
-
-# initialize our input data array
-input_data = []
-
-# read the JSON file and put the contents into input_data
-with open('data.json') as json_data:
-    input_data = json.load(json_data)
-```
-
 ## Create Grid
 
-Now that we have our input data loaded into a Python dictionary, we need to transform it into a simple 2-dimensional array of strings that we'll refer to as our grid. The first row of the grid is made up of the column names, and each row after that is data.
+Using the built-in `JSON.parse()` function, we take the above JSON and interpret it as a JavaScript object called `input`. Next, we need to transform it into a simple 2-dimensional array of strings that we'll refer to as our grid. The first row of the grid is made up of the column names, and each row after that is data.
 
-```python
-# initialize our grid
-grid = []
+```javascript
+// initialize our grid with the first row as the keys of the input data objects
+let grid = [Object.keys(input.data[0])];
 
-# populate the first row of the grid with the column list
-grid.append(input_data['columns'])
-
-# populate the rest of the grid with the data from the objects
-for row in input_data['data']:
-    grid.append(map(lambda i: row[i], grid[0]))
+// load the rest of the rows into the grid
+input.data.forEach(row => {
+    grid.push(grid[0].map(key => row[key]));
+});
 ```
 
 ## Minimum Column Widths
 
 Let's continue by calculating the minimum column width for each column in the grid. We'll say that we don't want any columns narrower than 7 characters wide. We also don't want to wrap any of the actual data values, so we'll break down the column headers (in `grid[0]`) into words but not the rest of the rows.
 
-```python 
-# initialize our list of column widths
-col_widths = [7] * len(grid[0])
+```javascript
+// minimum column width
+const minimumColumnWidth = 7
 
-# for each column in the grid
-for column in range(0, len(grid[0])):
-
-    # for each row in that column
-    for row in range(0, len(grid)): 
-
-        # is this the column header?
-        if row == 0:
-
-            # find the width of the longest word in the cell
-            col_widths[column] = max(
-                map(
-                    lambda x: len(x),
-                    grid[row][column].split(' ')
-                ) + [col_widths[column]]
-            )
+// calculate the column widths
+let columnWidths = new Array(grid[0].length)
+    .fill(minimumColumnWidth)
+    .map((width, i) => Math.max(...grid.map((row, j) => {
         
-        # this is a normal data row
-        else:
-
-            # find the width of the whole cell
-            col_widths[column] = max(
-                col_widths[column],
-                len(grid[row][column])
-            )
+        // is this the first row?
+        if (j === 0) {
+            // find the width of the longest word
+            return Math.max(...row[i].split(/\b/).map(w => w.length));
+        } else {
+            // find the width of the whole contents
+            return row[i].length;
+        }
+    }).concat(width)));
 ```
 
 ## Print Column Headers
 
-Great, now that we have the width of each column, we can continue with outputting the column header lines. Because of the wrapping, some column headers will take more lines than others, so we'll take care to pad the header lines such that the column headers are aligned to the bottom. We use `string.format()` to pad text so that the columns all line up nicely
+Great, now that we have the width of each column, we can continue with outputting the column header lines. Because of the wrapping, some column headers will take more lines than others, so we'll take care to pad the header lines such that the column headers are aligned to the bottom.
 
-```python
-# load the library for text wrapping
-from textwrap import wrap
+```javascript
+// wrap the column headers based on the calculated widths
+let headers = columnWidths.map((w, i) => {
+    return grid[0][i].split(/\s+/).reduce((accumulator, current) => {
+        if (accumulator.length == 0) {
+            return [current];
+        } else {
+            const lastLine = accumulator.pop();
+            const testLine = lastLine + ' ' + current;
+            if (testLine.length <= w) {
+                return accumulator.concat(testLine);
+            } else {
+                return accumulator.concat(lastLine, current);
+            }
+        }
+    }, []);
+});
 
-# put together the column headers
-headers = map(
-    lambda i: wrap(grid[0][i], col_widths[i]),
-    range(0, len(grid[0]))
-)
+// how many header lines do we need?
+const headerHeight = Math.max(...headers.map(x => x.length));
 
-# how many header lines do we need?
-header_height = max(
-    map(
-        lambda i: len(i),
-        headers
-    )
-)
+// pad our headers with blank lines so the content is bottom-aligned
+headers = headers.map(h =>
+    new Array(headerHeight - h.length).fill('').concat(...h));
 
-# pad each of the headers with some empty lines
-headers = map(
-    lambda i: ([''] * (header_height - len(i))) + i,
-    headers
-)
+// create the headers
+let lines = new Array(headerHeight).fill('').map((h, i) => 
+    columnWidths.map((w, j) => headers[j][i].padEnd(w)).join(' '));
 
-# print the header lines
-for h in range(0, header_height):
-    print ' '.join(
-        map(
-            lambda i: '{text: <{width}}'.format(
-                text = headers[i][h],
-                width = col_widths[i]
-            ),
-            range(0, len(headers))
-        )
-    )
+// create the separator lines
+lines.push(columnWidths.map(w => ''.padEnd(w, '-')).join(' '));
 
-# print the header separator line
-print ' '.join(
-    map(
-        lambda i: '-' * col_widths[i],
-        range(0, len(col_widths))
-    )
-)
 ```
 
 ## Print Data Rows
 
-Printing the data rows is a bit simpler as we do not do any wrapping, though we still use `string.format()` to pad each cell so that the alignment is good.
+Printing the data rows is a bit simpler as we do not do any wrapping, although we still pad the end of each cell with spaces using `String.padEnd()` to help everything line up correctly.
 
-```python
-# print each data line
-for i in range(1, len(grid)):
-    print ' '.join(
-        map(
-            lambda j: '{text: <{width}}'.format(
-                text = grid[i][j],
-                width = col_widths[j]
-            ),
-            range(0, len(grid[i]))
-        )
-    )
+```javascript
+// compose each data line
+grid.forEach((row, i) => {
+
+    // skip the first line, we already have the headers
+    if (i > 0) {
+        lines.push(columnWidths.map((w, j) => row[j].padEnd(w)).join(' '));
+    }
+
+});
+
+// print out the lines
+console.log(lines.join("\n"));
 ```
 
 ## Output
 
-Here's the output of the program:
+Here's what the program outputs to the console:
 
 ```
-                                                       Gross               
-                                                       Caloric             
-                                           Fixed       Value at            
-Sample              Moisture   Volatile    Carbon by   Constant            
-Name    Date        Content    Matter      Difference  Volume    Ash       
-------- ----------- ---------- ----------- ----------- --------- ----------
-X24-03  01-Nov-2018 4.85 wt. % 79.29 wt. % 15.62 wt. % 19985 J/g 0.25 wt. %
-X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 J/g 0.23 wt. %
-X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 J/g 0.24 wt. %
 ```
-
-The code for this post [can be found here](https://repl.it/@icooper1/formatting-columns).
 
 ## Next Steps
 
-In the next installment, we'll update the program to make the output more readable.
+In the next installment, we'll update the program to make the output more readable by wrapping column headers a little better and parsing out the units.
