@@ -12,6 +12,12 @@ layout: default
     </h1>
     <span class="post-date">{{ page.date | date: "%-d %B %Y" }}</span>
     {{ content }}
+
+    {% if page.scripts %}
+        {% for script in page.scripts %}
+            <script type="text/javascript" src="{{ script }}"></script>
+        {% endfor %}
+    {% endif %}
 </div>
 
 {% comment %}

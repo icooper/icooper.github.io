@@ -19,6 +19,12 @@ title: Home
     <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
 
     {{ post.content }}
+    
+    {% if post.scripts %}
+        {% for script in post.scripts %}
+            <script type="text/javascript" src="{{ script }}"></script>
+        {% endfor %}
+    {% endif %}
   </div>
   {% endfor %}
 </div>

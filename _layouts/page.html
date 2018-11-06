@@ -20,4 +20,10 @@ layout: default
     </h1>
 
     {{ content }}
+    
+    {% if page.scripts %}
+        {% for script in page.scripts %}
+            <script type="text/javascript" src="{{ script }}"></script>
+        {% endfor %}
+    {% endif %}
 </div>
