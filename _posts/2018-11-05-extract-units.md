@@ -7,7 +7,7 @@ scripts: ['/assets/js/extract-units.js']
 
 Building on [the first installment]({% link _posts/2018-11-01-formatting-columns.md %}), let's improve the formatting by pulling the units out of the rows and putting them in the header instead. We'll use the same data as before.
 
-## Define Patterns
+## Define Pattern
 
 Using a regular expression, we can easily determine if a cell contains a numeric value with a unit and then extract both parts. Let's create a function that takes the cell contents as an input and returns the unit (or `false` if no units are found).
 
