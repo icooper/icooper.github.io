@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page">
+<div class="page" id="page-{{ page.title | slugify }}">
 
     {% if page.img %}
         <img src="{{ page.img.src }}"

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post" id="post-{{ post.title | slugify }}">
     <h1 class="post-title">
         {% if page.longTitle %}
             {{ page.longTitle }}
