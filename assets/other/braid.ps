@@ -11,39 +11,17 @@
 % convert from inches
 /inch { 72 mul } bind def
 
-% zig (left)
-/zig {
+% draw zigs (left) and zags (right)
+/zig { cord_width strand_gap add neg braid_height zigzag } bind def
+/zag { cord_width strand_gap add 2 mul braid_height zigzag } bind def
+/zigzag {
+
+    % pull the endpoint location off of the stack
+    /dy exch def
+    /dx exch def
 
     % save the current location
     currentpoint /y0 exch def /x0 exch def
-
-    % calculate the endpoint
-    /dx cord_width strand_gap add neg def
-    /dy braid_height def
-
-    % is this a white line?
-    currentlinewidth strand_line gt y0 braid_start ne and {
-
-        % move the start point a little
-        currentlinewidth 2 div dup dx dy div mul exch rmoveto
-    } if
-
-    % draw a line to the endpoint
-    x0 dx add y0 dy add lineto
-
-    % move back to the start point and to the right by one strand width
-    x0 strand_gap add y0 moveto
-} bind def
-
-% zag (right)
-/zag {
-
-    % save the current location
-    currentpoint /y0 exch def /x0 exch def
-
-    % calculate the endpoint
-    /dx cord_width strand_gap add 2 mul def
-    /dy braid_height def
 
     % is this a white line?
     currentlinewidth strand_line gt y0 braid_start ne and {
