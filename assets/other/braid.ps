@@ -13,35 +13,63 @@
 
 % zig (left)
 /zig {
+
+    % save the current location
     currentpoint /y0 exch def /x0 exch def
+
+    % calculate the endpoint
     /dx cord_width strand_gap add neg def
     /dy braid_height def
+
+    % is this a white line?
     currentlinewidth strand_line gt y0 braid_start ne and {
+
+        % move the start point a little
         currentlinewidth 2 div dup dx dy div mul exch rmoveto
     } if
+
+    % draw a line to the endpoint
     x0 dx add y0 dy add lineto
+
+    % move back to the start point and to the right by one strand width
     x0 strand_gap add y0 moveto
 } bind def
 
 % zag (right)
 /zag {
+
+    % save the current location
     currentpoint /y0 exch def /x0 exch def
+
+    % calculate the endpoint
     /dx cord_width strand_gap add 2 mul def
     /dy braid_height def
+
+    % is this a white line?
     currentlinewidth strand_line gt y0 braid_start ne and {
+
+        % move the start point a little
         currentlinewidth 2 div dup dx dy div mul exch rmoveto
     } if
+
+    % draw a line to the endpoint
     x0 dx add y0 dy add lineto
+
+    % move back to the start point and to the right by one strand width
     x0 strand_gap add y0 moveto
 } bind def
 
 % draw braid section
 /braid_section {
+
+    % all stack operations, I hope nothing breaks
     dup dup black eq { strand_line } { strand_gap strand_line sub } ifelse
-    setlinewidth setgray 1 setlinecap newpath
-    dup 3 -1 roll cord_width strand_gap add mul exch
-    black ne { strand_gap 2 div add } if current_x add current_y moveto
-    cord_width strand_gap div 1 add cvi exch black ne { 1 sub } if exch repeat
+    setlinewidth setgray 1 setlinecap newpath dup 3 -1 roll cord_width
+    strand_gap add mul exch black ne { strand_gap 2 div add } if current_x
+    add current_y moveto cord_width strand_gap div 1 add cvi exch black ne
+    { 1 sub } if exch repeat
+
+    % draw the line
     stroke
 } bind def
 
@@ -59,16 +87,17 @@
         % draw the black lines
         strand_line setlinewidth color setgray 1 setlinecap newpath
         pos cord_width strand_gap add mul current_x add current_y moveto
-        cord_width strand_gap div 1 add cvi { 0 dy rlineto strand_gap dy neg rmoveto } repeat
+        cord_width strand_gap div 1 add cvi {
+            0 dy rlineto strand_gap dy neg rmoveto
+        } repeat
     } {
 
         % draw the white background
         cord_width setlinewidth color setgray 0 setlinecap newpath
-        pos cord_width strand_gap add mul cord_width 2 div add current_x add current_y moveto
+        pos cord_width strand_gap add mul cord_width 2 div add
+        current_x add current_y moveto
         0 dy rlineto
-
     } ifelse stroke
-
 } bind def
 
 % convenient constants
