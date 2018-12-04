@@ -79,25 +79,26 @@
 
 % convenient constants
 /black 0 def
-/white 0.8 def
+/white 1 def
 /left 0 def
 /center 1 def
 /right 2 def
 
 % page size
-/page_width 8.5 inch def
-/page_height 11 inch def
+/page_width 5 inch def
+/page_height 9 inch def
 
 % parameters
-/cord_width 0.25 inch def       % width of a cord
-/strand_line 0.5 def            % width of a strand
-/strand_gap 2 def               % space between strands
-/braid_start 4 inch def         % braid section start
-/braid_height 0.5 inch def      % height of a single braid section
+/cord_width 0.4 inch def        % width of a cord
+/strand_line 0.8 def            % width of a strand (not inches)
+/strand_gap 3.2 def             % space between strands
+/braid_left 0.75 inch def       % braid section left
+/braid_start 2.5 inch def       % braid section start
+/braid_height 0.75 inch def     % height of a single braid section
 /braid_count 3 def              % how many braid sections
 
 % current position
-/current_x 1 inch def
+/current_x braid_left def
 /current_y 0 def
 
 % move origin to top left because I like it there
