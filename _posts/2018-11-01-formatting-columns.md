@@ -2,7 +2,7 @@
 layout: post
 title: Column Formatting for Text Reports
 date: 2018-11-01
-scripts: ['/assets/js/formatting-columns.js']
+scripts: ['formatting-columns.js']
 ---
 
 Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table. Our raw data comes in JSON format; we'll use this as the input to our program:

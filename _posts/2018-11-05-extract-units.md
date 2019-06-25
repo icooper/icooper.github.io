@@ -2,7 +2,7 @@
 layout: post
 title: 'Text Reports II: Extract Units'
 date: 2018-11-05
-scripts: ['/assets/js/extract-units.js']
+scripts: ['extract-units.js']
 ---
 
 Building on [the first installment]({% link _posts/2018-11-01-formatting-columns.md %}), let's improve the formatting by pulling the units out of the rows and putting them in the header instead. We'll use the same data as before.

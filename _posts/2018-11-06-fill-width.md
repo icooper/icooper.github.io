@@ -2,7 +2,7 @@
 layout: post
 title: 'Text Reports III: Filling the Page'
 date: 2018-11-06
-scripts: ['/assets/js/fill-width.js']
+scripts: ['fill-width.js']
 ---
 
 Continuing to build on the [first]({% link _posts/2018-11-01-formatting-columns.md %}) and [second]({% link _posts/2018-11-05-extract-units.md %}) installments, let's try to reduce the wrapping used by expanding to fill the page width.
