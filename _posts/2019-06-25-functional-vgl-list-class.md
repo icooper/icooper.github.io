@@ -94,15 +94,6 @@ list.splice(2, 4)      { action returns: [b  c  d  e]               }
 
 The `splice` action is used to return a range of elements from the original list, removing them from the original list. This differs from the [JavaScript `Array.splice` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) in that it cannot be used to insert or replace existing elements.
 
-### Split and join
-
-```vgl
-                       { list contains: [1  2  3]                   }
-list.join(", ")        { action returns: "1, 2, 3"                  }
-```
-
-While they are really string functions rather than list functions, I've implemented `join` and `split` actions to convert between strings and lists.
-
 ### Filter
 
 ```vgl
