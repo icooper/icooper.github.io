@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-longTitle: About Ian
+longTitle: Have you seen this guy?
 img:
   src: /assets/img/ianc-about.jpg
   class: headimg-right-10rem
@@ -17,7 +17,7 @@ img:
   Wears glasses.
 </p>
 
-Ian Cooper is a developer living and working in the Cincinnati area. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
+Ian Cooper is a developer living and working in western Colorado. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
 
 Ian has worked in the laboratory informatics domain for the past decade. Beginning as an application support analyst, he shifted into laboratory informatics consulting and software development. An expert with [SampleManager LIMS](https://www.thermofisher.com/order/catalog/product/INF-11000) software and the [Integration Manager](https://www.thermofisher.com/order/catalog/product/INF-25000) data transformation tool, Ian has designed, built, and supported LIMS systems worldwide for his clients and employers.
 
@@ -27,7 +27,7 @@ Currently Ian works as a systems engineer for [Celanese](https://www.celanese.co
 
 ## About this site
 
-Most of my posts here are related to technical projects that I've been working on or other subjects that interest me.
+Most of my posts here are related to technical projects that I've been working on or other subjects that interest me. Posts from my [racing efforts](https://ian.does.racing/) are also included here.
 
 * Coded with [Visual Studio Code](https://code.visualstudio.com).
 * Built using [Jekyll](https://jekyllrb.com).
