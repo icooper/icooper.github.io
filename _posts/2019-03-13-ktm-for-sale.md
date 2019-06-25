@@ -35,7 +35,7 @@ You can read a little bit about the [history of the bike over here](https://ian.
 * box of extra parts
 * street legal and plated in Kentucky with a clean street title in my name
 
-[![cockpit view](/assets/img/ktm505-dash.jpg "cockpit view")](https://photos.app.goo.gl/QzMe5BiYq7Qt2hL6A)
+[![cockpit view](https://ian.does.racing/assets/img/ktm505-dash.jpg "cockpit view")](https://photos.app.goo.gl/QzMe5BiYq7Qt2hL6A)
 [There are a bunch more photos here.](https://photos.app.goo.gl/QzMe5BiYq7Qt2hL6A)
 
 ## Recent Maintenance
