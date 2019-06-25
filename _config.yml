@@ -3,3 +3,8 @@ description: Ian's Blog
 url: http://ianc.blog
 repository: icooper/icooper.github.io
 paginate: 5
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
