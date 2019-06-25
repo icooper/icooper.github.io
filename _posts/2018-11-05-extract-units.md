@@ -62,6 +62,7 @@ grid = grid.map((row, i) => {
 ## Column Widths
 
 With the units moving to the header, we need to make sure the column widths are all wide enough. Let's update the width calculation to make sure that the units are included when we're looking at the header row words. We consider the whole unit string as a "word" in this case as we do not want to break in the middle of the unit string.
+
 ```javascript
 // calculate the column widths
 let columnWidths = new Array(grid[0].length)
@@ -108,7 +109,7 @@ let headers = columnWidths.map((w, i) => {
 
 With our changes, the output now looks like this:
 
-```
+```text
                                                  Gross           
                                                  Caloric         
                                       Fixed      Value at        

@@ -3,7 +3,7 @@
 This site design is based on [Hyde](http://hyde.getpoole.com/) by Mark Otto, which is licensed under the MIT License along with my modifications.
 All blog posts and code snippets are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) except where noted otherwise.
 
-# MIT License
+## MIT License
 
 Copyright (c) 2013 Mark Otto
 Copyright (c) 2018 Ian Cooper
@@ -14,6 +14,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Creative Commons Attribution-ShareAlike 4.0 International License
+## Creative Commons Attribution-ShareAlike 4.0 International License
 
 See the license details at [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/).

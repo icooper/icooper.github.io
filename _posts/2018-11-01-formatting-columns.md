@@ -140,7 +140,7 @@ console.log(lines.join('\n'));
 
 Here's what the program outputs to the console:
 
-```
+```text
                                                        Gross               
                                                        Caloric             
                                            Fixed       Value at            

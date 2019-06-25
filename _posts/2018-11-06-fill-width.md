@@ -9,7 +9,7 @@ Continuing to build on the [first]({% link _posts/2018-11-01-formatting-columns.
 
 We'll continue to use the same data as before, but with the _Moisture Content_ and _Volatile Matter_ columns removed to give us room to expand. Thus we start with this:
 
-```
+```text
                                Gross           
                                Caloric         
                     Fixed      Value at        
@@ -250,7 +250,7 @@ console.log(gridToLines(grid, units, columnWidths).join('\n'));
 
 With a specified page width of 80 columns, this is the output that we get:
 
-```
+```text
                                                    Gross Caloric Value        
                         Fixed Carbon by Difference at Constant Volume  Ash    
 Sample Name Date        wt. %                      J/g                 wt. %  
