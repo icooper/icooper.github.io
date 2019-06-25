@@ -93,3 +93,10 @@ ul > li {
     font-size: 1.25rem;
     font-weight: 400;
 }
+
+.content abbr {
+    text-decoration: none;
+    text-transform: inherit;
+    font: inherit;
+    color: #ac4142;
+}
