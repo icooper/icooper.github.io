@@ -7,7 +7,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-undef */
 /* PrismJS 1.16.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+csharp+markdown+typescript+perl+python */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+csharp+json+markdown+typescript+perl+python */
 var _self = (typeof window !== 'undefined')
 	? window   // if in browser
 	: (
@@ -919,6 +919,26 @@ Prism.languages.insertBefore('csharp', 'class-name', {
 
 Prism.languages.dotnet = Prism.languages.cs = Prism.languages.csharp;
 
+Prism.languages.json = {
+	'property': {
+		pattern: /"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
+		greedy: true
+	},
+	'string': {
+		pattern: /"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+		greedy: true
+	},
+	'comment': /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
+	'number': /-?\d+\.?\d*(e[+-]?\d+)?/i,
+	'punctuation': /[{}[\],]/,
+	'operator': /:/,
+	'boolean': /\b(?:true|false)\b/,
+	'null': {
+		pattern: /\bnull\b/,
+		alias: 'keyword'
+	}
+};
+
 (function (Prism) {
 
 	// Allow only one line break
@@ -1467,3 +1487,20 @@ Prism.languages.python = {
 Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
 
 Prism.languages.py = Prism.languages.python;
+
+Prism.languages.vgl = {
+	'string': {
+		pattern: /"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+		greedy: true
+	},
+	'comment': /{[\s\S]*?(?:}|$)/,
+	'number': /-?\d+\.?\d*(e[+-]?\d+)?/i,
+	'punctuation': /[[\](),]/,
+	'operator': /[+\-*\/#]/,
+	'keyword': /\b(?:JOIN LIBRARY|JOIN STANDARD_LIBRARY|DECLARE|CREATE OBJECT)\b/,
+	'boolean': /\b(?:TRUE|FALSE)\b/,
+	'null': {
+		pattern: /\b(?:EMPTY|ERROR|LOCKED)\b/,
+		alias: 'keyword'
+	}
+};
