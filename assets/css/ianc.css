@@ -64,12 +64,15 @@ ul > li {
 
 .profile-photo {
     display: block;
-    background-image: url(/assets/img/ianc-200.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 200px; /* this is the size of the image */
+    width: 200px;
     height: 200px;
     margin: 0 auto;
+    background-image: url(/assets/img/ianc-sidebar.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
 }
 
 .headimg-right-10rem {
