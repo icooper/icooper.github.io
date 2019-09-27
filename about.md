@@ -9,7 +9,7 @@ img:
 ---
 
 <p class="lead" markdown="1">
-  Senior Testing and Analytics Engineer at [Celanese](https://www.celanese.com).
+  Senior Operational Excellence Engineer at [Celanese](https://www.celanese.com).
   Formerly of [Microsoft](https://www.microsoft.com),
     [Thermo Fisher Scientific](https://www.thermofisher.com),
     [Royal Dutch Shell](https://www.shell.com),
@@ -27,10 +27,8 @@ Currently Ian works as a systems engineer for [Celanese](https://www.celanese.co
 
 ## About this site
 
-Most of my posts here are related to technical projects that I've been working on or other subjects that interest me. Posts from my [racing efforts](https://ian.does.racing/) are also included here.
+Most of my posts here are related to technical projects that I've been working on or other subjects that interest me.
 
 * Coded with [Visual Studio Code](https://code.visualstudio.com).
 * Built using [Jekyll](https://jekyllrb.com).
-* Hosted on [GitHub Pages](https://pages.github.com).
-
-The code behind this site is [available on GitHub](https://github.com/icooper/icooper.github.io).
+* Hosted by [GitHub Pages](https://pages.github.com).
