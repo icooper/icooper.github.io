@@ -8,7 +8,7 @@ longTitle: Who is this guy?
   Operational Excellence Engineer at [Celanese](https://www.celanese.com).
   Formerly of [Microsoft](https://www.microsoft.com),
     [Thermo Fisher Scientific](https://www.thermofisher.com),
-    [Royal Dutch Shell](https://www.shell.com),
+    [Shell](https://www.shell.com),
     and [Astrix Technology Group](https://astrixinc.com/).
 </p>
 
