@@ -1,11 +1,7 @@
 ---
 layout: page
 title: About
-longTitle: Have you seen this guy?
-img:
-  src: /assets/img/ianc-about.jpg
-  class: headimg-right-10rem
-  alt: Ian in the mountains
+longTitle: Who is this guy?
 ---
 
 <p class="lead" markdown="1">
@@ -14,10 +10,9 @@ img:
     [Thermo Fisher Scientific](https://www.thermofisher.com),
     [Royal Dutch Shell](https://www.shell.com),
     and [Astrix Technology Group](https://astrixinc.com/).
-  Newly glasses-free.
 </p>
 
-Ian Cooper is a developer living and working in western Colorado. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
+Ian Cooper is a developer living and working in western Colorado. Originally from New England, he graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
 
 Ian has worked in the laboratory informatics domain for the past decade. Beginning as an application support analyst, he shifted into laboratory informatics consulting and software development. An expert with [SampleManager LIMS](https://www.thermofisher.com/order/catalog/product/INF-11000) software and the [Integration Manager](https://www.thermofisher.com/order/catalog/product/INF-25000) data transformation tool, Ian has designed, built, and supported LIMS systems worldwide for his clients and employers.
 
