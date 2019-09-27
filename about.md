@@ -9,12 +9,12 @@ img:
 ---
 
 <p class="lead" markdown="1">
-  Senior Operational Excellence Engineer at [Celanese](https://www.celanese.com).
+  Operational Excellence Engineer at [Celanese](https://www.celanese.com).
   Formerly of [Microsoft](https://www.microsoft.com),
     [Thermo Fisher Scientific](https://www.thermofisher.com),
     [Royal Dutch Shell](https://www.shell.com),
     and [Astrix Technology Group](https://astrixinc.com/).
-  Wears glasses.
+  Newly glasses-free.
 </p>
 
 Ian Cooper is a developer living and working in western Colorado. Originally from New England, Ian graduated from [Massachusetts Academy of Math &amp; Science at WPI](https://massacademy.org) and then [LeTourneau University](https://www.letu.edu) with an interdisciplinary degree in aeronautical science, computer science, and math.
