@@ -6,7 +6,6 @@ layout: bare
         "url": "{{ post.url }}",
         "longTitle": "{{ post.longTitle }}",
         "title": "{{ post.title }}",
-        "date": "{{ post.date }}"
+        "date": "{{ post.date | date_to_xmlschema }}"
     },
 {% endfor %}]
-
