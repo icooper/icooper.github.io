@@ -1,0 +1,12 @@
+---
+layout: bare
+---
+[{% for post in site.posts %}
+    {
+        "url": "{{ post.url }}",
+        "longTitle": "{{ post.longTitle }}",
+        "title": "{{ post.title }}",
+        "date": "{{ post.date }}"
+    },
+{% endfor %}]
+
