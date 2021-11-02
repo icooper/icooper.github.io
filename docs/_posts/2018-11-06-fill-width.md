@@ -26,7 +26,7 @@ The output above only uses 48 columns of text, so you can see there's lots of ro
 
 ## How Wide?
 
-We need to define how many columns of text can fit on a page. The code blocks that I use on this site comfortably fit about 80 columns---at least in my browser---so we'll use that. We'll set the page width next to where we set the minimum column width.
+We need to define how many columns of text can fit on a page. The code blocks that I use on this site comfortably fit about 80 columns—at least in my browser—so we'll use that. We'll set the page width next to where we set the minimum column width.
 
 ```javascript
     // page width and minimum column width
@@ -171,7 +171,7 @@ function calcWidth(str, targetHeight = 0) {
 
 Note that in `targetHeightWidth()` we made `targetHeight` an optional parameter with a default value of zero. We'll reuse this function later to calculate the minimum possible width of a column.
 
-Now we get to the meat---how do we expand things to fill the page width? The basic algorithm is this:
+Now we get to the meat—how do we expand things to fill the page width? The basic algorithm is this:
 
 1. Find the "tallest" column header.
 2. Expand it so that it's one row shorter.

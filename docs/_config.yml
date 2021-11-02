@@ -3,3 +3,4 @@ description: Ian's Blog
 url: http://ianc.blog
 repository: icooper/icooper.github.io
 markdown: GFM
+highlighter: rouge

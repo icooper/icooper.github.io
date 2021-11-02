@@ -136,7 +136,7 @@ list.includes(a)       { action returns: TRUE                       }
 list.includes(e)       { action returns: FALSE                      }
 ```
 
-The `indexOf` and `lastIndexOf` return the index of the first or last (respectively) occurrence of a given element in the list. If the element is not found in the list, the action returns `0`. The `includes` action returns `TRUE` if the given element is included in the list---it is implemented by returning `TRUE` if `indexOf` is greater than `0`.
+The `indexOf` and `lastIndexOf` return the index of the first or last (respectively) occurrence of a given element in the list. If the element is not found in the list, the action returns `0`. The `includes` action returns `TRUE` if the given element is included in the list—it is implemented by returning `TRUE` if `indexOf` is greater than `0`.
 
 ### Chaining
 
