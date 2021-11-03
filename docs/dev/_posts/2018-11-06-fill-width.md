@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'Text Reports III: Filling the Page'
-scripts: ['fill-width.js']
+scripts: ['/dev/resources/fill-width.js']
 ---
 
-Continuing to build on the [first]({% link _posts/2018-11-01-formatting-columns.md %}) and [second]({% link _posts/2018-11-05-extract-units.md %}) installments, let's try to reduce the wrapping used by expanding to fill the page width.
+Continuing to build on the [first]({% post_url /dev/2018-11-01-formatting-columns %}) and [second]({% post_url /dev/2018-11-05-extract-units %}) installments, let's try to reduce the wrapping used by expanding to fill the page width.
 
 We'll continue to use the same data as before, but with the _Moisture Content_ and _Volatile Matter_ columns removed to give us room to expand. Thus we start with this:
 
@@ -259,7 +259,7 @@ X24-02      31-Oct-2018 16.01                      20004               0.23
 X24-01      30-Oct-2018 15.89                      19996               0.24   
 ```
 
-[You can download the complete code here.](/static/js/fill-width.js)
+[You can download the complete code here.]({% link /dev/resources/fill-width.js %})
 
 ## Next Steps
 

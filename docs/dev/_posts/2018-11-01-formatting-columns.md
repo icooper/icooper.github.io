@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Formatting for Text Reports
-scripts: ['formatting-columns.js']
+scripts: ['/dev/resources/formatting-columns.js']
 ---
 
 Here's the scenario: we have a system that outputs plain-text reports with data formatted into a table. Our raw data comes in JSON format; we'll use this as the input to our program:
@@ -151,8 +151,8 @@ X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 J/g 0.23 wt. %
 X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 J/g 0.24 wt. %
 ```
 
-[You can download the complete code here.](/static/js/formatting-columns.js)
+[You can download the complete code here.]({% link /dev/resources/formatting-columns.js %})
 
 ## Next Steps
 
-[In the next installment]({% link _posts/2018-11-05-extract-units.md %}), we'll update the program to make the output more readable by extracting the units out of the cells and putting them in the column headers.
+[In the next installment]({% post_url /dev/2018-11-05-extract-units %}), we'll update the program to make the output more readable by extracting the units out of the cells and putting them in the column headers.

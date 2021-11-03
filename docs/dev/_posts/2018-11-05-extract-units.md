@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'Text Reports II: Extract Units'
-scripts: ['extract-units.js']
+scripts: ['/dev/resources/extract-units.js']
 ---
 
-Building on [the first installment]({% link _posts/2018-11-01-formatting-columns.md %}), let's improve the formatting by pulling the units out of the rows and putting them in the header instead. We'll use the same data as before.
+Building on [the first installment]({% post_url /dev/2018-11-01-formatting-columns %}), let's improve the formatting by pulling the units out of the rows and putting them in the header instead. We'll use the same data as before.
 
 ## Define Pattern
 
@@ -121,8 +121,8 @@ X24-02  31-Oct-2018 4.52     80.91    16.01      20004    0.23
 X24-01  30-Oct-2018 4.68     80.03    15.89      19996    0.24   
 ```
 
-[You can download the complete code here.](/static/js/extract-units.js)
+[You can download the complete code here.]({% link /dev/resources/extract-units.js %})
 
 ## Next Steps
 
-[In the next iteration]({% link _posts/2018-11-06-fill-width.md %}), we'll improve the layout by expanding to fill the page width.
+[In the next iteration]({% post_url /dev/2018-11-06-fill-width %}), we'll improve the layout by expanding to fill the page width.

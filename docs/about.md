@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-longTitle: Who is this guy?
+altTitle: Who is this guy?
 ---
 
 <div class="lead">

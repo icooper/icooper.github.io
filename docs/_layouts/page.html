@@ -12,8 +12,8 @@ layout: default
     {% endif %}
 
     <h1 class="page-title">
-        {% if page.longTitle %}
-            {{ page.longTitle }}
+        {% if page.altTitle %}
+            {{ page.altTitle }}
         {% else %}
             {{ page.title }}
         {% endif %}
@@ -23,7 +23,7 @@ layout: default
     
     {% if page.scripts %}
         {% for script in page.scripts %}
-            <script type="text/javascript" src="/static/js/{{ script }}"></script>
+            <script type="text/javascript" src="{{ script }}"></script>
         {% endfor %}
     {% endif %}
 </div>
