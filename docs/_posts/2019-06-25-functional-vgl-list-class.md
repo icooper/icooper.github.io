@@ -21,7 +21,7 @@ Here's an summary of the `LIST` API:
 
 ### Create a new list
 
-```vgl
+```
 JOIN LIBRARY lib_list
 
 DECLARE list
@@ -34,7 +34,7 @@ As with many VGL class-oriented libraries, a routine to define the class needs t
 
 ### Add elements to the list
 
-```vgl
+```
                        { list contents                              }
 list.append(1)         { [1]                                        }
 list.append(2)         { [1  2]                                     }
@@ -46,7 +46,7 @@ The `append` and `push` actions are identical, adding a new element to the end o
 
 ### Access elements of the list by index
 
-```vgl
+```
                        { list contains: [4  1  2  3]                }
 list.get(3)            { action returns: 2                          }
 list.set(3, 5)         { list contains: [4  1  5  3]                }
@@ -54,7 +54,7 @@ list.set(3, 5)         { list contains: [4  1  5  3]                }
 
 ### Removing elements of the list
 
-```vgl
+```
                        { list contents                              }
                        { [4  1  5  3]                               }
 list.remove(1)         { [1  5  3]                                  }
@@ -66,7 +66,7 @@ Corresponding to `unshift` and `push`, `shift` and `pop` remove and return the f
 
 ### Order elements of the list
 
-```vgl
+```
                        { list contents                              }
                        { [1  2  3  4]                               }
 list.reverse()         { [4  3  2  1]                               }
@@ -76,7 +76,7 @@ There is a `reverse` action to reverse the order of the elements in the list, bu
 
 ### Slice and splice
 
-```vgl
+```
                        { list contains: [a  b  c  d  e]             }
 list.slice(2, 4)       { action returns: [b  c]                     }
 list.slice(-3, EMPTY)  { action returns: [c  d  e]                  }
@@ -85,7 +85,7 @@ list.slice(EMPTY, -2)  { action returns: [a  b  c]                  }
 
 The `slice` action is used to copy a range of elements into a new list without modfying the original list.
 
-```vgl
+```
                        { list contains: [a  b  c  d  e  f  g]       }
 list.splice(2, 4)      { action returns: [b  c  d  e]               }
                        { list now contains: [a  b  f  g]            }
@@ -95,7 +95,7 @@ The `splice` action is used to return a range of elements from the original list
 
 ### Filter
 
-```vgl
+```
                        { list contains: [a  b  b  c  d  a]          }
 list.distinct()        { action returns: [a  b  c  d]               }
 ```
@@ -104,7 +104,7 @@ The `distinct` action returns a new list with all of the distinct elements in th
 
 ### Bounds
 
-```vgl
+```
                        { list contains: [a  b  c  a  d]             }
 list.inBounds(0)       { action returns: FALSE                      }
 list.inBounds(3)       { action returns: TRUE                       }
@@ -113,7 +113,7 @@ list.inBounds(6)       { action returns: FALSE                      }
 
 The `inBounds` action returns TRUE if the given index is contained within the list. Remember, list indexes are 1-based in order to be consistent with VGL array indexes.
 
-```vgl
+```
                        { list contains: [a  b  c  a  d]             }
 list.length            { statement value: 5                         }
 ```
@@ -122,7 +122,7 @@ There is also a `length` property containing the number of elements in the list.
 
 ### Contents
 
-```vgl
+```
                        { list contains: [a  b  c  a  d]             }
 list.indexOf(a)        { action returns: 1                          }
 list.indexOf(c)        { action returns: 3                          }
@@ -139,7 +139,7 @@ The `indexOf` and `lastIndexOf` return the index of the first or last (respectiv
 
 ### Chaining
 
-```vgl
+```
                        { list contains: [1  2  3  4]                }
 list.push(5).unshift(6).remove(2).pop()
                        { action returns: 5                          }
@@ -150,7 +150,7 @@ Many actions that result in the list being modified will return a reference to t
 
 ### Output
 
-```vgl
+```
                        { list contains: [1  2  3]                   }
 list.join(", ")        { action returns: "1, 2, 3"                  }
 list.join("|")         { action returns: "1|2|3"                    }
