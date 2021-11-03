@@ -67,7 +67,7 @@ ul > li {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    background-image: url(/assets/img/ianc-sidebar.jpg);
+    background-image: url(/static/img/ianc-sidebar.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -102,4 +102,8 @@ ul > li {
     text-transform: inherit;
     font: inherit;
     color: #ac4142;
+}
+
+.license img {
+    border-radius: 0;
 }

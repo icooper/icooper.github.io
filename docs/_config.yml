@@ -1,6 +1,7 @@
 title: Ian Cooper
 description: Ian's Blog
-url: http://ianc.blog
+url: https://ianc.blog
 repository: icooper/icooper.github.io
+timezone: America/Denver
 markdown: GFM
 highlighter: rouge

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Column Formatting for Text Reports
-date: 2018-11-01
 scripts: ['formatting-columns.js']
 ---
 
@@ -152,7 +151,7 @@ X24-02  31-Oct-2018 4.52 wt. % 80.91 wt. % 16.01 wt. % 20004 J/g 0.23 wt. %
 X24-01  30-Oct-2018 4.68 wt. % 80.03 wt. % 15.89 wt. % 19996 J/g 0.24 wt. %
 ```
 
-[You can download the complete code here.](/assets/js/formatting-columns.js)
+[You can download the complete code here.](/static/js/formatting-columns.js)
 
 ## Next Steps
 

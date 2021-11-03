@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Functional VGL List Class
-date: 2019-06-25
 ---
 
 The scripting language used inside of SampleManager, VGL, has basic multidimensional array datatypes for fixed-length and variable-length arrays. In addition to the usual array accessor, there are some routines in the core `STD_ARRAY` library to do some basic manipulation of arrays. Most of the names are self-explanatory:

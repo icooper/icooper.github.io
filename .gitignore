@@ -1,3 +1,6 @@
 # generated Jekyll site
 /docs/vendor/bundle
 /docs/_site
+
+# node stuff
+/node_modules

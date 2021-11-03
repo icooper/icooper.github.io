@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Text Reports II: Extract Units'
-date: 2018-11-05
 scripts: ['extract-units.js']
 ---
 
@@ -122,7 +121,7 @@ X24-02  31-Oct-2018 4.52     80.91    16.01      20004    0.23
 X24-01  30-Oct-2018 4.68     80.03    15.89      19996    0.24   
 ```
 
-[You can download the complete code here.](/assets/js/extract-units.js)
+[You can download the complete code here.](/static/js/extract-units.js)
 
 ## Next Steps
 

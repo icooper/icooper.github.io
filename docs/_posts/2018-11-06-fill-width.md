@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Text Reports III: Filling the Page'
-date: 2018-11-06
 scripts: ['fill-width.js']
 ---
 
@@ -260,7 +259,7 @@ X24-02      31-Oct-2018 16.01                      20004               0.23
 X24-01      30-Oct-2018 15.89                      19996               0.24   
 ```
 
-[You can download the complete code here.](/assets/js/fill-width.js)
+[You can download the complete code here.](/static/js/fill-width.js)
 
 ## Next Steps
 
